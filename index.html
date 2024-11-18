@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>Enkel Webbsida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Välkommen till min webbsida</h1>
+    </header>
+
+    <main>
+        <!-- #### Formulär #### -->
+        <section id="form-section">
+            <h2>Fyll i formuläret</h2>
+            <form id="info-form">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <button type="button" id="submit-btn">Skicka</button>
+            </form>
+        </section>
+
+        <!-- #### Bild ####-->
+        <section id="image-section">
+            <h2>Här är en bild</h2>
+            <img src="example.jpg" alt="Exempelbild" id="example-image">
+        </section>
+
+        <!-- #### Tabell #### -->
+        <section id="table-section">
+            <h2>Tabell med data</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Namn</th>
+                        <th>E-post</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- #### Data från formuläret läggs här ####-->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
